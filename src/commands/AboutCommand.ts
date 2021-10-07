@@ -32,7 +32,7 @@ Memory (Heap Used)  :: ${this.client.util.bytesToSize(process.memoryUsage().heap
 Process Uptime      :: ${this.client.util.formatMS(process.uptime() * 1000)}
 Bot Uptime          :: ${this.client.util.formatMS(this.client.uptime!)}
 
-
+Node.js version     :: ${process.version}
 Discord.js version  :: v${version}
 FFmpeg version      :: v${(await this.client.util.getPackageJSON("ffmpeg-static"))["ffmpeg-static"]["binary-release-name"]}
 YTDL-Core version   :: v${(await this.client.util.getPackageJSON("ytdl-core")).version}
